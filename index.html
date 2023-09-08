@@ -7,16 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Agenda de contatos</h1>
         </header>
-        <form>
-            <input type="text" required placeholder="Nome"/>
-            <input type="number" required placeholder="Telefone"/>
+        <form id="formAgenda">
+            <input type="text" id="nome-contato" required placeholder="Nome"/>
+            <input type="text" id="tel-contato" name="telefone" pattern="[0-9]{10,11}" required placeholder="Telefone"/>
             <button type="submit">Cadastrar +</button>
         </form>
         <table>
@@ -38,5 +38,6 @@
             </tbody>
         </table>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
